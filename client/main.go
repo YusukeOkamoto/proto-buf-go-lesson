@@ -63,7 +63,7 @@ func callDownloadFile(c pb.FileServiceClient) {
 }
 
 func callUploadFile(c pb.FileServiceClient) {
-	filePath := "/Users/yusuke/dev/private/grpc-lesson/storage/sports.txt"
+	filePath := "/Users/yusuke.okamoto/dev/study/proto-buf-go-lesson/storage/sports.txt"
 	file, err := os.Open(filePath)
 	if err != nil {
 		log.Fatalf("Failed to open file: %v", err)
@@ -103,7 +103,7 @@ func callUploadFile(c pb.FileServiceClient) {
 }
 
 func callUploadAndNotifyProgress(c pb.FileServiceClient) {
-	filePath := "/Users/yusuke/dev/private/grpc-lesson/storage/sports.txt"
+	filePath := "/Users/yusuke.okamoto/dev/study/proto-buf-go-lesson/storage/sports.txt"
 	file, err := os.Open(filePath)
 	if err != nil {
 		log.Fatalf("Failed to open file: %v", err)
